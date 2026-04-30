@@ -2,7 +2,7 @@ package com.yash;
 
 import java.util.Scanner;
 
-public class LeapYear {
+public class P01_LeapYear {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter a year");
