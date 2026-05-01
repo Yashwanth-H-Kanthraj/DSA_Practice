@@ -3,7 +3,7 @@ package com.yash.f02_practice;
 import java.util.Scanner;
 
 
-public class PO1_Even_Odd {
+public class P01_Even_Odd {
 
     public static void M1_IfCondition(int num) {
         if (num % 2 == 0) {
@@ -24,8 +24,8 @@ public class PO1_Even_Odd {
         System.out.print("enter the number :");
         int num = sc.nextInt();
 
-        PO1_Even_Odd.M1_IfCondition(num);
-        PO1_Even_Odd.M2_TernaryOperatorMthod(num);
+        P01_Even_Odd.M1_IfCondition(num);
+        P01_Even_Odd.M2_TernaryOperatorMthod(num);
         sc.close();
 
     }
