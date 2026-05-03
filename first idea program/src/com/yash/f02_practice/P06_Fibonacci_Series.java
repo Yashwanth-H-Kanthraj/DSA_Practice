@@ -15,6 +15,6 @@ public class P06_Fibonacci_Series {
     }
 
     public static void main(String[] args) {
-        P06_Fibonacci_Series.Logic();
+        Logic();
     }
 }
