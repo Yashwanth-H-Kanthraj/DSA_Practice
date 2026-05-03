@@ -2,7 +2,6 @@ package com.yash.f02_practice;
 
 public class P06_Fibonacci_Series {
 
-
     public static void Logic() {
         int a = 0;
         int b = 1;
