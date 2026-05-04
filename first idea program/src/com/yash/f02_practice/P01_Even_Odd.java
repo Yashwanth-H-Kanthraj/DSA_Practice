@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class P01_Even_Odd {
 
+
     public static void M1_IfCondition(int num) {
         if (num % 2 == 0) {
             System.out.println("The given number " + num + " is even.");
