@@ -1,5 +1,6 @@
 package com.yash.f02_practice;
 
+Input currency in rupees and output in USD.
 import java.util.Scanner;
 
 public class P05_Rupees_To_Dollars {
