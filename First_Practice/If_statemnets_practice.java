@@ -12,7 +12,14 @@ class Calculatar {
     
     for(int num = 1; num <=n; num++){
         
-        SyStem.out.print(n);
+        SyStem.out.print(num);
+        
+    }
+    int num = 1
+    
+    while(num <= n){
+        SyStem.out.print(num);
+        num ++; 
         
     }
         }
