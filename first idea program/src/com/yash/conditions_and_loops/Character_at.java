@@ -12,5 +12,5 @@ public class Character_at {
         char ch = name.charAt(0);
         System.out.println(ch);
 
+        }
     }
-}
