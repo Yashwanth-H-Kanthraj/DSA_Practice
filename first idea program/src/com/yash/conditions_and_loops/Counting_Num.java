@@ -4,8 +4,7 @@ public class Counting_Num {
 
     static void main(String[] args) {
 
-
-        int number = 303251555;t
+        int number = 303251555;
 
         int count = 0;
         while (number > 0) {
