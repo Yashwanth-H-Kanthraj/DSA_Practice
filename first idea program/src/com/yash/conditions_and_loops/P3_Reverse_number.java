@@ -1,6 +1,6 @@
 package com.yash.conditions_and_loops;
 
-public class Reverse_number {
+public class P3_Reverse_number {
 
     public static void main(String[] args) {
         int n = 102514;

@@ -1,6 +1,6 @@
 package com.yash.conditions_and_loops;
 
-public class Counting_Num {
+public class P2_Counting_Num {
 
     static void main(String[] args) {
 
