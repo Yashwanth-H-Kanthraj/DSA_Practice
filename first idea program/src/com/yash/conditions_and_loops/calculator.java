@@ -17,25 +17,26 @@ public class calculator {
                 int n2 = sc.nextInt();
 
                 if (op == '+') {
-                    System.out.println(ans = n1 + n2);
+                    ans = n1 + n2;
                 }
                 if (op == '-') {
-                    System.out.println(ans = n1 - n2);
+                    ans = n1 - n2;
                 }
                 if (op == '*') {
-                    System.out.println(ans = n1 * n2);
+                    ans = n1 * n2;
                 }
                 if (op == '/') {
-                    System.out.println(ans = n1 / n2);
+                    ans = n1 / n2;
                 }
                 if (op == '%') {
-                    System.out.println(ans = n1 % n2);
+                    ans = n1 % n2;
                 }
             } else if (op == 'x' || op == 'X') {
                 break;
             } else {
                 System.out.println("invalid operator");
             }
+            System.out.println(ans);
         }
     }
 }

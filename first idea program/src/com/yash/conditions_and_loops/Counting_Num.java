@@ -5,7 +5,7 @@ public class Counting_Num {
     static void main(String[] args) {
 
 
-        int number = 303251555;
+        int number = 303251555;t
 
         int count = 0;
         while (number > 0) {
@@ -16,7 +16,6 @@ public class Counting_Num {
             }
             number = number / 10;
         }
-        System.out.println(count);
-
+        System./**/out.println(count);
     }
 }
