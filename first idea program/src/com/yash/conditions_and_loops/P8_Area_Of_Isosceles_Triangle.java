@@ -7,7 +7,7 @@ public class P8_Area_Of_Isosceles_Triangle {
         Scanner sc = new Scanner(System.in);
         System.out.print("enter the side and base in meters :");
         int s1 = sc.nextInt();
-        int s2 = s1;
+        int s2 = s1*Math.max(sc.nextInt(),sc.nextInt());
         int base = sc.nextInt();
 
         double height = Math.sqrt(s1 * s1 - base * base);
