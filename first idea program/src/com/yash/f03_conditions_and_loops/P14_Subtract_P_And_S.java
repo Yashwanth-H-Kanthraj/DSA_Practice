@@ -8,18 +8,21 @@ public class P14_Subtract_P_And_S {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        System.out.print("enter the num1 : ");
-        int num1 = sc.nextInt();
-        System.out.print("enter the num2 : ");
-        int num2= sc.nextInt();
+        System.out.print("enter the num : ");
+        int num = sc.nextInt();
+        int product = 1;
+        int sum = 0;
 
-        int product = num1 * num2;
-        int sum = num1+num2;
+        while (num > 0) {
 
-        int subtract = Math.max(product,sum)-Math.min(product,sum);
-
-        System.out.printf("Subtraction of the Product and Sum of Digits of an Integer is %d",subtract);
-
-
+            int temp = num % 10;
+            num = num / 10;
+            product = product * temp;
+            sum = sum + temp;
+        }
+        int subtraction = product - sum;
+        System.out.println("product     : " + product);
+        System.out.println("sum         : " + sum);
+        System.out.println("Difference  : " + subtraction);
     }
 }
