@@ -32,6 +32,8 @@ public class P2_Electricity_Bill {
             double useage = ((units - 300) * 5.0) + (100 * 1.50) + (100 * 2.5) + (100 * 4);
             System.out.printf("bill generated for the %.3f units consumed is %.2f Rs. ", units, useage);
         }
+
+
         sc.close();
     }
 }
