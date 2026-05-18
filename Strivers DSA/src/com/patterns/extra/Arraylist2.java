@@ -1,4 +1,4 @@
-package com;
+package com.patterns.extra;
 import java.util.*;
 public class Arraylist2 
 {
