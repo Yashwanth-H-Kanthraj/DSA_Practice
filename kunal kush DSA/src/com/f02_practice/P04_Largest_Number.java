@@ -1,4 +1,4 @@
-package com.yash.f02_practice;
+package com.f02_practice;
 //Take 2 numbers as input and print the largest number.
 
 

@@ -1,4 +1,4 @@
-package com.yash.f02_practice;
+package com.f02_practice;
 
 import java.util.Scanner;
 

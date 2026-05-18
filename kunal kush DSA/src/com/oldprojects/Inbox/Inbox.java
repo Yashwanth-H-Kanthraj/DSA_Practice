@@ -1,4 +1,4 @@
-package com.yash.oldprojects.Inbox;
+package com.oldprojects.Inbox;
 
 public class Inbox {
 

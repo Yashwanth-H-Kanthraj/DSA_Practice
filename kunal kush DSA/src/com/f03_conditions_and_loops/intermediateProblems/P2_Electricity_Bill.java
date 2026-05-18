@@ -1,4 +1,4 @@
-package com.yash.f03_conditions_and_loops.intermediateProblems;
+package com.f03_conditions_and_loops.intermediateProblems;
 
 import java.util.Scanner;
 

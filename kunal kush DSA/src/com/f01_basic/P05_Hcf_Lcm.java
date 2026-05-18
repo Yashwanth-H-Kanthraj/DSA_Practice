@@ -1,7 +1,7 @@
 
 // Take 2 numbers as inputs and find their HCF and LCM.
 
-package com.yash.f01_basic;
+package com.f01_basic;
 
 import static java.lang.Math.min;
 

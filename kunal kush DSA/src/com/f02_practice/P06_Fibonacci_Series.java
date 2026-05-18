@@ -1,4 +1,4 @@
-package com.yash.f02_practice;
+package com.f02_practice;
 // To calculate Fibonacci Series up to n numbers.
 
 public class P06_Fibonacci_Series {

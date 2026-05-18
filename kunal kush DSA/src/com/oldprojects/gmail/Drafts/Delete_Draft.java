@@ -1,4 +1,4 @@
-package com.yash.oldprojects.gmail.Drafts;
+package com.oldprojects.gmail.Drafts;
 
 public class Delete_Draft {
 

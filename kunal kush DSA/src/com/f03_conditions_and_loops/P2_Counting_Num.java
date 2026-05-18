@@ -1,4 +1,4 @@
-package com.yash.f03_conditions_and_loops;
+package com.f03_conditions_and_loops;
 
 public class P2_Counting_Num {
 

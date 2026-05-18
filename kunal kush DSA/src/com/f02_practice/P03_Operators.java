@@ -1,4 +1,4 @@
-package com.yash.f02_practice;
+package com.f02_practice;
 // Take in two numbers and an operator (+, -, *, /) and calculate the value. (Use if conditions)
 
 

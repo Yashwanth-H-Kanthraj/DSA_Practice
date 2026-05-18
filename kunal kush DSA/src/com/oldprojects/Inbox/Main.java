@@ -1,7 +1,7 @@
-package com.yash.oldprojects.Inbox;
+package com.oldprojects.Inbox;
 
-import com.yash.oldprojects.gmail.Drafts.Delete_Draft;
-import com.yash.oldprojects.gmail.Drafts.Draft;
+import com.oldprojects.gmail.Drafts.Delete_Draft;
+import com.oldprojects.gmail.Drafts.Draft;
 
 public class Main {
 
