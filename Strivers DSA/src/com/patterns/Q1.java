@@ -2,7 +2,7 @@ package com.patterns;
 
 import java.util.Scanner;
 
-public class Q1_Pattern {
+public class Q1 {
 
     static int n;
 
