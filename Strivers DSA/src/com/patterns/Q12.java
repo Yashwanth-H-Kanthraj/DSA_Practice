@@ -1,14 +1,10 @@
 package com.patterns;
 
-    /*
-    pattern
-    1______2
-    12____21
-    123__321
-    12344321
-     */
-
-import com.sun.jdi.Mirror;
+    /*     pattern
+        1______2
+        12____21
+        123__321
+        12344321     */
 
 public class Q12 {
     public void pattern(int n) {
@@ -57,7 +53,6 @@ public class Q12 {
             spaces -= 2;
         }
     }
-
 
     public static void main(String[] args) {
         Q12 obj = new Q12();
