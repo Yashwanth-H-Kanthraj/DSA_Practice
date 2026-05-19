@@ -7,7 +7,7 @@ public class Q8 {
             for (int space = 1; space <= row - 1; space++) {
                 System.out.print(" ");
             }
-            for (int star = 1; star <= 2 * (n - row) + 1 && star > 0; star++) {
+            for (int star = 1; star <= 2 * (n - row) + 1; star++) {
                 System.out.print("*");
             }
             for (int tspace = 1; tspace <= row - 1; tspace++) {
