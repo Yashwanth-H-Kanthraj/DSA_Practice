@@ -1,6 +1,10 @@
 package com.patterns;
 
 public class Q10 {
+    public static void main(String[] args) {
+        patternup(5);
+    }
+
     static void patternup(int n) {
 
         for (int i = 1; i <= 2 * n - 1; i++) {
@@ -13,9 +17,5 @@ public class Q10 {
             }
             System.out.println();
         }
-    }
-
-    public static void main(String[] args) {
-        patternup(5);
     }
 }
