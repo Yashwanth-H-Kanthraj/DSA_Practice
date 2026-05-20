@@ -7,6 +7,13 @@ package com.patterns;
         12344321     */
 
 public class Q12 {
+    public static void main(String[] args) {
+        Q12 obj = new Q12();
+        obj.pattern(5);
+        obj.pattern2(6);
+
+    }
+
     public void pattern(int n) {
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= i; j++) {
@@ -52,13 +59,6 @@ public class Q12 {
             // Decrease spaces by 2 after each row
             spaces -= 2;
         }
-    }
-
-    public static void main(String[] args) {
-        Q12 obj = new Q12();
-        obj.pattern(6);
-        obj.pattern2(6);
-
     }
 }
 
