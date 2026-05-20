@@ -11,7 +11,6 @@ public class Q17 {
             for (int j = 0; j <= (n - i - 1); j++) {
                 System.out.print(" ");
             }
-
             for (char j = 'A'; j <= 'A' + i; j++) {
                 System.out.print(j);
             }
