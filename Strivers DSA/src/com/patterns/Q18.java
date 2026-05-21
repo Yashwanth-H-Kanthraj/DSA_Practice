@@ -12,7 +12,6 @@ public class Q18 {
 
             for (char j = (char) ('A' + n - 1); j >= (char) ('A' + n - 1 - i); j--) {
                 System.out.print(j + " ");
-
             }
             System.out.println();
         }
