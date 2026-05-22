@@ -9,21 +9,20 @@ package com.patterns;
 public class Q12 {
     public static void main(String[] args) {
         Q12 obj = new Q12();
-        obj.pattern(5);
-        obj.pattern2(6);
+        obj.pattern(10);
+        obj.pattern2(9);
 
     }
 
     public void pattern(int n) {
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= i; j++) {
+        for (int i = 1; i < n; i++) {
+            for (int j = 1; j < i + 1; j++) {
                 System.out.print(j);
             }
 
-            for (int j = 1; j <= 2 * (n - i); j++) {
+            for (int j = 1; j <= 2 * (n - i - 1); j++) {
                 System.out.print(" ");
             }
-
             for (int j = i; j >= 1; j--) {
                 System.out.print(j);
             }
