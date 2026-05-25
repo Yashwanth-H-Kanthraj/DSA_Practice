@@ -3,7 +3,7 @@ package com.f09_patterns;
 public class Pattern {
     static void main(String[] args) {
         Pattern obj = new Pattern();
-        obj.pattern8(5);
+        obj.pattern9(5);
     }
 
     public void pattern1(int n) {
@@ -95,7 +95,19 @@ public class Pattern {
 
     }
 
-    public void pattern9() {
+    public void pattern9(int n) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i + 1; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < 2 * (n - i) - 1; j++) {
+                System.out.print('*');
+            }
+            for (int j = 0; j < i + 1; j++) {
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
 
     }
 
