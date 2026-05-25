@@ -55,11 +55,23 @@ public class Pattern {
         }
     }
 
-    public void pattern6() {
-
+    public void pattern6(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            for (int j = n - i+1; j <= n ; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 
-    public void pattern7() {
+    public void pattern7(int n) {
+        for (int i = 0; i < n; i++) {
+            for
+
+        }
 
     }
 
