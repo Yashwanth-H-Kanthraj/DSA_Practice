@@ -3,7 +3,7 @@ package com.patterns;
 public class Q21 {
     static void main(String[] args) {
         Q21 obj = new Q21();
-        obj.pattern(10);
+        obj.pattern(5);
     }
 
     /*
