@@ -4,7 +4,7 @@ public class Pattern {
 
     static void main(String[] args) {
         Pattern obj = new Pattern();
-        obj.pattern15(5);
+        obj.pattern17(5);
     }
 
     public void pattern1(int n) {
@@ -228,5 +228,25 @@ public class Pattern {
 
             System.out.println();
         }
+    }
+
+    public void pattern16() {
+
+    }
+
+    public void pattern17(int n) {
+        for (int i = 0; i < 2 * n - 1; i++) {
+            int space = i < n ? n - i - 1 : i - n + 1;
+            int starsCount = i < n ? 2 * i + 1 : 4 * n - 2 * i -3;
+
+            System.out.print("_".repeat(space));
+
+            for (int j = 0; j < starsCount; j++) {
+                System.out.print("*");
+            }
+            System.out.print("_".repeat(space));
+            System.out.println();
+        }
+
     }
 }
