@@ -1,9 +1,10 @@
 package com.f09_patterns;
 
 public class Pattern {
+
     static void main(String[] args) {
         Pattern obj = new Pattern();
-        obj.pattern9(5);
+        obj.pattern15(5);
     }
 
     public void pattern1(int n) {
@@ -108,20 +109,124 @@ public class Pattern {
             }
             System.out.println();
         }
-
     }
 
-    public void pattern10() {
-
+    public void pattern10(int n) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n - i; j++) {
+                System.out.print(" ");
+            }
+            int stars = 2 * i + 1;
+            for (int j = 0; j < stars; j++) {
+                if (j % 2 == 1) System.out.print(" ");
+                else System.out.print("*");
+            }
+            for (int j = 0; j < n - i; j++) {
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
     }
 
-    public void pattern11() {
-
+    public void pattern11(int n) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i + 1; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < 2 * (n - i) - 1; j++) {
+                if (j % 2 == 1) System.out.print(" ");
+                else System.out.print("*");
+            }
+            for (int j = 0; j < i + 1; j++) {
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
     }
 
-    public void pattern12() {
-
+    public void pattern12(int n) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i + 1; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < 2 * (n - i) - 1; j++) {
+                if (j % 2 == 1) System.out.print(" ");
+                else System.out.print("*");
+            }
+            for (int j = 0; j < i + 1; j++) {
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n - i; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < 2 * i + 1; j++) {
+                if (j % 2 == 1) System.out.print(" ");
+                else System.out.print("*");
+            }
+            for (int j = 0; j < n + -i; j++) {
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
     }
 
+    public void pattern12A(int n) {
+        for (int i = 0; i < 2 * n - 1; i++) {
+            int row = i < n ? i : 2 * n - 2 - i;
+            System.out.print(" ".repeat(row));
+            for (int j = 0; j < n - row; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
 
+    public void pattern13(int n) {
+        for (int i = 0; i < n; i++) {
+            System.out.print(" ".repeat(n - i));
+            if (i == n - 1) System.out.print("*".repeat(2 * n - 1));
+            else {
+                for (int j = 0; j < 2 * i + 1; j++)
+                    if (j == 0 || j == 2 * i) System.out.print("*");
+                    else System.out.print(" ");
+            }
+            System.out.print(" ".repeat(n - i));
+            System.out.println();
+        }
+    }
+
+    public void pattern14(int n) {
+        for (int i = 0; i < n; i++) {
+            System.out.print(" ".repeat(i + 1));
+
+            if (i == 0) System.out.print("*".repeat(2 * n - 1));
+            else {
+                for (int j = 0; j < 2 * (n - i) - 1; j++) {
+                    if (j == 0 || j == 2 * (n - i) - 2) System.out.print("*");
+                    else System.out.print(" ");
+                }
+            }
+            System.out.print(" ".repeat(i + 1));
+            System.out.println();
+        }
+    }
+
+    public void pattern15(int n) {
+        for (int i = 0; i < 2 * n - 1; i++) {
+            int starsCount = i < n ? i : 2 * n - i - 2;
+
+            System.out.print("_".repeat(n - starsCount - 1));
+
+            for (int j = 0; j < 2 * starsCount + 1; j++) {
+                if (j == 0 || j == 2 * starsCount) System.out.print("*");
+                else System.out.print(" ");
+            }
+            System.out.print("_".repeat(n - starsCount - 1));
+
+            System.out.println();
+        }
+    }
 }
