@@ -302,5 +302,25 @@ public class Pattern {
         }
     }
 
+    public void pattern22(int n) {
+        int num = 1;
+
+        for (int i = 0; i < n; i++) {
+            if (i % 2 == 0) num = 1;
+            else num = 0;
+            for (int j = 0; j < i + 1; j++) {
+                System.out.print(num + " ");
+                num = 1 - num;
+            }
+            System.out.println();
+        }
+    }
+
+    public void pattern23(int n) {
+        for (int i = 0; i < 3; i++) {
+        }
+
+    }
+
 
 }
