@@ -237,16 +237,17 @@ public class Pattern {
     public void pattern17(int n) {
         for (int i = 0; i < 2 * n - 1; i++) {
             int space = i < n ? n - i - 1 : i - n + 1;
-            int starsCount = i < n ? 2 * i + 1 : 4 * n - 2 * i -3;
+            int starsCount = i < n ? 2 * i + 1 : 4 * n - 2 * i - 3;
 
-            System.out.print("_".repeat(space));
+            System.out.print(" ".repeat(space));
 
-            for (int j = 0; j < starsCount; j++) {
-                System.out.print("*");
+            for (int j = 1; j <= starsCount; j++) {
+                System.out.print(j);
             }
-            System.out.print("_".repeat(space));
+            System.out.print(" ".repeat(space));
             System.out.println();
         }
 
     }
+
 }
