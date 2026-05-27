@@ -250,4 +250,45 @@ public class Pattern {
 
     }
 
+    public void pattern18(int n) {
+        for (int i = 0; i < 2 * n; i++) {
+            int stars = i < n ? n - i : i - n + 1;
+            System.out.print("*".repeat(stars));
+
+            int space = i < n ? 2 * i : 4 * n - 2 * i - 2;
+            System.out.print(" ".repeat(space));
+
+            System.out.print("*".repeat(stars));
+
+            System.out.println();
+
+        }
+    }
+
+    public void pattern19(int n) {
+        for (int i = 0; i < 2 * n - 1; i++) {
+
+            int stars = i < n ? i + 1 : 2 * n - i - 1;
+            System.out.print("*".repeat(stars));
+
+            int space = i < n ? 2 * (n - i) - 2 : 2 * (i - n) + 2;
+            System.out.print(" ".repeat(space));
+
+            System.out.print("*".repeat(stars));
+
+            System.out.println();
+        }
+    }
+
+    public void pattern20(int n) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i == 0 || j == 0 || i == n - 1 || j == n - 1) System.out.print("*");
+                else System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+
+
 }
