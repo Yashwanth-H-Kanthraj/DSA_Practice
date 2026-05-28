@@ -344,4 +344,17 @@ public class Pattern {
         }
     }
 
+    public void pattern25(int n) {
+        for (int i = 0; i < n; i++) {
+            int space = n - i;
+            System.out.print(" ".repeat(space));
+            for (int j = 0; j < n; j++) {
+                if (j == 0 || i == 0 || i == n - 1 || j == n - 1) System.out.print("*");
+                else System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+
+
 }
