@@ -386,13 +386,19 @@ public class Pattern {
     } //incomplete
 
     public void pattern28(int n) {
-        for (int i = 0; i < n ; i++) {
-            int space = i<n?
+        for (int i = 0; i < 2 * n - 1; i++) {
+            int space = i < n ? n - i - 1 : i - n + 1;
 
-            for (int j = 0; j <n-i-1 ; j++) {
-                System.out.print(j);
-
+            for (int j = 0; j < space; j++) {
+                System.out.print(" ");
             }
+
+            int stars = i < n ? 2 * i + 1 : 4 * n - 2 * i - 3;
+            for (int j = 0; j < stars; j++) {
+                if (j % 2 == 0) System.out.print("*");
+                else System.out.print(" ");
+            }
+
             System.out.println();
 
         }
