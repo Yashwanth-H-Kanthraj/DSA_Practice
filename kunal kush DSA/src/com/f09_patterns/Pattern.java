@@ -436,8 +436,9 @@ public class Pattern {
 
     public void pattern31(int n) {
         for (int i = 0; i < n; i++) {
-            for (int j = 'E'-i; j > 'E' - i - 1; j--) {
+            for (char j = (char) ('E' - i); j <= 'E'; j++) {
                 System.out.print(j);
+                System.out.print(" ");
 
             }
             System.out.println();
