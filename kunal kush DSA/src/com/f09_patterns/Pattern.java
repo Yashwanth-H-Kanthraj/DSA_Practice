@@ -4,7 +4,7 @@ public class Pattern {
 
     static void main(String[] args) {
         Pattern obj = new Pattern();
-        obj.pattern28(5);
+        obj.pattern31(5);
     }
 
     public void pattern1(int n) {
@@ -400,7 +400,47 @@ public class Pattern {
             }
 
             System.out.println();
+        }
+    }
 
+    public void pattern29(int n) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 1; j < 2 * (n - i) - 1; j++) {
+                System.out.print(" ");
+            }
+
+            for (int j = i + 1; j > 0; j--) {
+                System.out.print(j);
+                System.out.print(" ");
+            }
+            System.out.println();
+
+        }
+    } //incomplete
+
+    public void pattern30(int n) {
+        for (int i = 0; i < 2 * n - 1; i++) {
+            for (int j = 0; j < 2 * n - 1; j++) {
+                int top = i;
+                int left = j;
+                int bottom = (2 * n - 2) - i;
+                int right = (2 * n - 2) - j;
+
+                int minDist = Math.min(Math.min(top, bottom), Math.min(left, right));
+                System.out.print(n - minDist);
+
+            }
+            System.out.println();
+        }
+    }
+
+    public void pattern31(int n) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 'E'-i; j > 'E' - i - 1; j--) {
+                System.out.print(j);
+
+            }
+            System.out.println();
         }
     }
 }
