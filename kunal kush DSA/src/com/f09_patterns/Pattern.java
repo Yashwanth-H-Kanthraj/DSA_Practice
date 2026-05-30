@@ -4,7 +4,7 @@ public class Pattern {
 
     static void main(String[] args) {
         Pattern obj = new Pattern();
-        obj.pattern35(5);
+        obj.pattern30(5);
     }
 
     public void pattern1(int n) {
@@ -412,6 +412,12 @@ public class Pattern {
             for (int j = i + 1; j > 0; j--) {
                 System.out.print(j);
                 System.out.print(" ");
+            }
+
+            for (int j = 2; j <= i + 1; j++) {
+                System.out.print(j);
+                System.out.print(" ");
+
             }
             System.out.println();
 
