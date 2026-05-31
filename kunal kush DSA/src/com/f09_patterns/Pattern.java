@@ -232,7 +232,7 @@ public class Pattern {
 
     public void pattern16() {
 
-    } //incomplete
+    }  //incomplete
 
     public void pattern17(int n) {
         for (int i = 0; i < 2 * n - 1; i++) {
@@ -320,7 +320,7 @@ public class Pattern {
         for (int i = 0; i < 3; i++) {
         }
 
-    }  //incomplete
+    } //incomplete
 
     public void pattern24(int n) {
 
