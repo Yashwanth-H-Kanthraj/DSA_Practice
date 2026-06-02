@@ -4,7 +4,7 @@ public class Pattern {
 
     static void main(String[] args) {
         Pattern obj = new Pattern();
-        obj.pattern27(5);
+        obj.pattern16(5);
     }
 
     public void pattern1(int n) {
@@ -230,9 +230,24 @@ public class Pattern {
         }
     }
 
-    public void pattern16() {
+    public void pattern16(int n) {
+        int[][] Traingle = new int[n][n];
 
-    }  //incomplete
+        for (int i = 0; i < n; i++) {
+            System.out.print(" ".repeat(n - i));
+
+            for (int j = 0; j < i + 1; j++) {
+                if (j == 0 || i == 0) Traingle[i][j] = 1;
+                else Traingle[i][j] = Traingle[i - 1][j - 1] + Traingle[i - 1][j];
+
+                System.out.print(Traingle[i][j]);
+                System.out.print(" ");
+            }
+            System.out.print(" ".repeat((n - i)));
+
+            System.out.println();
+        }
+    }
 
     public void pattern17(int n) {
         for (int i = 0; i < 2 * n - 1; i++) {
