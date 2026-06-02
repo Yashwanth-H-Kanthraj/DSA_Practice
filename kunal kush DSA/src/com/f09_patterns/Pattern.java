@@ -4,7 +4,7 @@ public class Pattern {
 
     static void main(String[] args) {
         Pattern obj = new Pattern();
-        obj.pattern16(5);
+        obj.pattern27(5);
     }
 
     public void pattern1(int n) {
@@ -331,12 +331,6 @@ public class Pattern {
         }
     }
 
-    public void pattern23(int n) {
-        for (int i = 0; i < 3; i++) {
-        }
-
-    } //incomplete
-
     public void pattern24(int n) {
 
         for (int i = 1; i < 2 * n; i++) {
@@ -381,25 +375,28 @@ public class Pattern {
     }
 
     public void pattern27(int n) {
-        int leftNum = 1;
-        int rightNum = 4 * n;
-        for (int i = 0; i < n - 1; i++) {
-            int numInRow = n - i;
-            int space = 2 * i;
-            System.out.print(" ".repeat(space));
 
-            for (int j = 1; j < numInRow; j++) {
-                System.out.print(leftNum + " ");
-                leftNum++;
+        int leftNumber = 1;
+        int rightNumber = 10;
+
+        for (int i = 0; i < n - 1; i++) {
+            System.out.print("_".repeat(2 * i));
+
+            for (int j = 0; j < n - i - 1; j++) {
+                System.out.print(leftNumber++ + " ");
+
             }
-            System.out.print(" ".repeat(2));
-            for (int j = 1; j < numInRow; j++) {
-                System.out.print((rightNum - numInRow + 1 - j) + " ");
+            System.out.print(" ");
+
+            for (int j = 0; j < n - i - 1; j++) {
+
+                System.out.print(rightNumber + j);
+
             }
-            rightNum -= numInRow;
+            rightNumber = rightNumber - (n - i)+1;
             System.out.println();
         }
-    } //incomplete
+    }
 
     public void pattern28(int n) {
         for (int i = 0; i < 2 * n - 1; i++) {
