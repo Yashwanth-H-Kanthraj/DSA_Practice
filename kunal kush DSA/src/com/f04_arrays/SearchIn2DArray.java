@@ -16,7 +16,7 @@ public class SearchIn2DArray {
 
         // System.out.println(Arrays.toString(search2(s.arr, target)));
 
-        System.out.println(s.search4(s.arr));
+        System.out.println(s.search5(s.arr));
     }
 
     // search a element in the 2d array
@@ -56,6 +56,7 @@ public class SearchIn2DArray {
         System.out.println(maximum);
     }
 
+    // maximum value method 2
     public int search4(int[][] arr) {
         int maximum = Integer.MIN_VALUE;
 
@@ -70,5 +71,35 @@ public class SearchIn2DArray {
         return maximum;
     }
 
+    // minimum value
+    public int search5(int[][] arr) {
+
+
+        int minimum = Integer.MAX_VALUE;
+
+        for (int row = 0; row < arr.length; row++) {
+            for (int col = 0; col < arr[row].length; col++) {
+                if (arr[row][col] < minimum) {
+                    minimum = arr[row][col];
+                }
+            }
+        }
+        return minimum;
+    }
+
+        /*
+        int minimum = Integer.MAX_VALUE;
+
+            for (int[] relement : arr) {
+                for (int celement : relement) {
+                    if (celement < minimum) {
+
+                        minimum = celement;
+                    }
+                }
+            }
+            return minimum;
+        }
+         */
 
 }
