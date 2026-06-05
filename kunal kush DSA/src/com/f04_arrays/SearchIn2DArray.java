@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 public class SearchIn2DArray {
     int[][] arr = {
-            {23, 4, 64},
+            {23, 464, 64},
             {36, 45, 89, 52, 71},
-            {78, 64, 845}
+            {78, 64, 85}
     };
 
     public static void main(String[] args) {
@@ -14,10 +14,9 @@ public class SearchIn2DArray {
 
         int target = 71;
 
-       // System.out.println(Arrays.toString(search2(s.arr, target)));
+        // System.out.println(Arrays.toString(search2(s.arr, target)));
 
-        s.search3();
-
+        System.out.println(s.search4(s.arr));
     }
 
     // search a element in the 2d array
@@ -43,6 +42,7 @@ public class SearchIn2DArray {
         return new int[]{-1, -1};
     }
 
+    // search the maxiumum value
     public void search3() {
         int maximum = arr[0][0];
 
@@ -55,4 +55,20 @@ public class SearchIn2DArray {
         }
         System.out.println(maximum);
     }
+
+    public int search4(int[][] arr) {
+        int maximum = Integer.MIN_VALUE;
+
+        for (int[] relement : arr) {
+            for (int celement : relement) {
+                if (celement > maximum) {
+
+                    maximum = celement;
+                }
+            }
+        }
+        return maximum;
+    }
+
+
 }
