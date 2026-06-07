@@ -8,7 +8,20 @@ public class Q1 {
         int leftNum = 1;
         int rightStart = n * (n + 1) / 2 + n + 3;  // 17 for n=4
 
+        for (int i = 0; i < n; i++) {
+            int numsInRow = n - i;
 
+            // Spaces
+            System.out.print(" ".repeat(2 * i));
+
+            // Left numbers
+            for (int j = 0; j < numsInRow; j++) {
+                System.out.print(leftNum++ + " ");
+            }
+
+            System.out.print(" ");
+
+            // Right numbers
             for (int j = 0; j < numsInRow; j++) {
                 System.out.print((rightStart + j) + " ");
             }
