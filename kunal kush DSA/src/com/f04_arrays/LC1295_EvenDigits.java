@@ -1,6 +1,6 @@
 package com.f04_arrays;
 
-public class EvenDigits {
+public class LC1295_EvenDigits {
     public static void main(String[] args) {
 
         int[] nums = {12, 24, 54, 464, 6, 847, 46};
@@ -40,6 +40,10 @@ public class EvenDigits {
 
     static int DigitsInNumber2(int num) {
         return Integer.toString(Math.abs(num)).length();
+    }
+
+    static int DigitsInNumbers3(int num) {
+        return (int) (Math.log10(num) + 1);
     }
 
 }
