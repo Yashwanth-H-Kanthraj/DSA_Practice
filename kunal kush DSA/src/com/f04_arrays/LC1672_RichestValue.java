@@ -19,5 +19,16 @@ public class LC1672_RichestValue {
         return ans;
     }
 
+    int maximumWealth2(int[][] accounts) {
+        int ans = Integer.MIN_VALUE;
 
+        for (int[] person : accounts) {
+            int sum = 0;
+            for (int account : person) {
+                sum += account;
+            }
+            if (sum > ans) ans = sum;
+        }
+        return ans;
+    }
 }
